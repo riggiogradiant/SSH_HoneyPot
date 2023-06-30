@@ -1,0 +1,50 @@
+2023-06-30T10:14:59.126759Z [HoneyPotSSHTransport,33,127.0.0.1] Remote SSH version: SSH-2.0-paramiko_3.2.0
+2023-06-30T10:14:59.127764Z [HoneyPotSSHTransport,33,127.0.0.1] SSH client hassh fingerprint: a704be057881f0b1d623cd263e477a8b
+2023-06-30T10:14:59.128788Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-ed25519'
+2023-06-30T10:14:59.128874Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-06-30T10:14:59.128932Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2023-06-30T10:14:59.169247Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2023-06-30T10:14:59.413079Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-06-30T10:14:59.419840Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'user' trying auth b'publickey'
+2023-06-30T10:14:59.420197Z [HoneyPotSSHTransport,33,127.0.0.1] public key attempt for user b'user' of type b'ssh-rsa' with fingerprint 27:9e:b6:ee:6e:46:70:e6:69:71:8e:8e:ea:ea:57:fd
+2023-06-30T10:14:59.420681Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'user' failed auth b'publickey'
+2023-06-30T10:14:59.420807Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] reason: ('Incorrect signature', None)
+2023-06-30T10:14:59.421396Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2023-06-30T10:14:59.421900Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'user' trying auth b'password'
+2023-06-30T10:14:59.422111Z [HoneyPotSSHTransport,33,127.0.0.1] login attempt [b'user'/b'pass'] succeeded
+2023-06-30T10:14:59.422556Z [HoneyPotSSHTransport,33,127.0.0.1] Initialized emulated server as architecture: linux-x64-lsb
+2023-06-30T10:14:59.422868Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'user' authenticated with b'password'
+2023-06-30T10:14:59.423015Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2023-06-30T10:14:59.423659Z [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2023-06-30T10:14:59.423793Z [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2023-06-30T10:14:59.470397Z [twisted.conch.ssh.session#info] Handling pty request: b'vt100' (24, 80, 0, 0)
+2023-06-30T10:14:59.470553Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,33,127.0.0.1] Terminal Size: 80 24
+2023-06-30T10:14:59.471502Z [twisted.conch.ssh.session#info] Getting shell
+2023-06-30T10:15:02.623883Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: cd ..
+2023-06-30T10:15:02.624384Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: cd ..
+2023-06-30T10:15:03.959718Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: cd ..
+2023-06-30T10:15:03.960229Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: cd ..
+2023-06-30T10:15:06.373304Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: pwd
+2023-06-30T10:15:06.373736Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: pwd 
+2023-06-30T10:15:07.775133Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: ls
+2023-06-30T10:15:07.775731Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: ls 
+2023-06-30T10:15:10.344058Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: cd srv
+2023-06-30T10:15:10.344644Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: cd srv
+2023-06-30T10:15:11.125026Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: ls
+2023-06-30T10:15:11.125501Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: ls 
+2023-06-30T10:15:13.736589Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: cd ..
+2023-06-30T10:15:13.737026Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: cd ..
+2023-06-30T10:15:18.792418Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: cd root
+2023-06-30T10:15:18.792913Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: cd root
+2023-06-30T10:15:19.693990Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: ls
+2023-06-30T10:15:19.694438Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: ls 
+2023-06-30T10:15:20.822214Z [HoneyPotSSHTransport,33,127.0.0.1] CMD: pwd
+2023-06-30T10:15:20.822856Z [HoneyPotSSHTransport,33,127.0.0.1] Command found: pwd 
+2023-06-30T10:15:22.813450Z [twisted.conch.ssh.session#info] exitCode: 0
+2023-06-30T10:15:22.813615Z [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
+2023-06-30T10:15:22.814071Z [HoneyPotSSHTransport,33,127.0.0.1] Closing TTY Log: var/lib/cowrie/tty/9fb77d4c13fe5328804c9207738bfdbf7964b27e3d038b86dfbb3398b7f42b84 after 23 seconds
+2023-06-30T10:15:22.814728Z [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2023-06-30T10:15:22.815128Z [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
+2023-06-30T10:15:22.815379Z [HoneyPotSSHTransport,33,127.0.0.1] avatar user logging out
+2023-06-30T10:15:22.815483Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2023-06-30T10:15:22.815565Z [HoneyPotSSHTransport,33,127.0.0.1] Connection lost after 23 seconds
